@@ -3,8 +3,6 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 
 
-from data_ingestion import load_documents
-
 class Embedding:
     def __init__(self,chunk_size=500,chunk_overlap=200,model="all-MiniLM-L6-v2"):
         self.model = SentenceTransformer(model)
